@@ -15,7 +15,7 @@ A Streamlit-based dashboard for exploring financial and business model metrics u
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/finance_dashboard.git
+   git clone https://github.com/aadjones/finance_dashboard.git
    cd finance_dashboard
    ```
 
