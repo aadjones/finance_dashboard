@@ -3,3 +3,6 @@ pytest
 black
 isort
 flake8
+setuptools
+pandas
+watchdog
