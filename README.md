@@ -39,4 +39,4 @@ A Streamlit-based dashboard for exploring financial and business model metrics u
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
