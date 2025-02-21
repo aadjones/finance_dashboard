@@ -17,11 +17,6 @@ def create_users_dataframe(users: list) -> pd.DataFrame:
 
 
 def count_new_users(df: pd.DataFrame, period: str = "day") -> pd.Series:
-    """
-    Counts new users grouped by a specified period: 'day', 'week', or 'month'.
-
-    Returns a pandas Series with the period as index and counts as values.
-    """
     df = df.copy()
     df.set_index("signup_date", inplace=True)
 
@@ -34,6 +29,8 @@ def count_new_users(df: pd.DataFrame, period: str = "day") -> pd.Series:
     else:
         raise ValueError("Period must be 'day', 'week', or 'month'.")
 
+    # Drop days with zero signups
+    counts = counts[counts != 0]
     return counts
 
 
